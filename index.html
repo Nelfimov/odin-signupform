@@ -12,7 +12,10 @@
 
   <body>
     <div class="background-image">
-      <div class="caption"></div>
+      <div class="caption">
+        <img src="static/odin-logo.png" alt="logo">
+        <span>ODIN</span>
+      </div>
     </div>
     <div class="content">
       <h2>
@@ -22,22 +25,38 @@
       <h2>
         You <em>know</em> you want to.
       </h2>
-      <form action="" method="post">
-        <h2>Let's do this!</h2>
-        <label for="firstName">FIRST NAME</label>
-        <input type="text" name="firstName" id="firstName">
-        <label for="lastName">LAST NAME</label>
-        <input type="text" name="lastName" id="lastName">
-        <label for="email">EMAIL</label>
-        <input type="email" name="email" id="email" required>
-        <label for="phone">PHONE NUMBER</label>
-        <input type="tel" name="phone" id="phone">
-        <label for="password">PASSWORD</label>
-        <input type="password" name="password" id="password" required>
-        <label for="passwordConfirm">CONFIRM PASSWORD</label>
-        <input type="password" name="passwordConfirm" id="passwordConfirm" required>
+      <form action="" method="get">
+        <div class="control">
+          <h2>Let's do this!</h2>
+          <div class="form-control">
+            <div class="input">
+              <label for="firstName">FIRST NAME</label>
+              <input type="text" name="firstName" id="firstName">
+            </div>
+            <div class="input">
+              <label for="lastName">LAST NAME</label>
+              <input type="text" name="lastName" id="lastName">
+            </div>
+            <div class="input">
+              <label for="email">EMAIL</label>
+              <input type="email" name="email" id="email" required>
+            </div>
+            <div class="input">
+              <label for="phone">PHONE NUMBER</label>
+              <input type="tel" name="phone" id="phone">
+            </div>
+            <div class="input">
+              <label for="password">PASSWORD</label>
+              <input type="password" name="password" id="password" required>
+            </div>
+            <div class="input">
+              <label for="passwordConfirm">CONFIRM PASSWORD</label>
+              <input type="password" name="passwordConfirm" id="passwordConfirm" required>
+            </div>
+          </div>
+        </div>
+        <button type="submit">Create Account</button>
       </form>
-      <button type="submit">Create Account</button>
       <p>Already have an account? <a href="login.html">Log In</a></p>
     </div>
   </body>

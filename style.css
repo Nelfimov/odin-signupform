@@ -17,8 +17,22 @@ body {
   justify-content: center;
 }
 
-form {
-  background-color: white;
+
+div.form-control {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+}
+
+div.input {
+  display: flex;
+  flex-flow: column;
+  padding-right: 100px;
+}
+
+label {
+  color: grey;
+  font-size: 12px;
 }
 
 div.background-image {
@@ -42,15 +56,59 @@ div.content>* {
   padding: 0 3rem;
 }
 
+form {
+  background-color: white;
+  background-clip: padding-box;
+}
+
 button {
-  position: relative;
-  right: -3rem;
   background-color: #596D48;
   color: white;
   font-weight: bolder;
+  font-family: inherit;
+  font-size: 100%;
+  padding: 10px 50px;
+  margin-top: 20px;
+
 }
 
 input {
+  font-family: inherit;
+  font-size: 100%;
+  padding: 5px;
+  width: 250px;
   border: 2px solid #E5E7EB;
   border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input:focus {
+  box-shadow: 1 1;
+  border-color: blue;
+}
+
+
+div.caption {
+  position: relative;
+  top: calc(50px + 30vh);
+  width: 500px;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+span {
+  position: inherit;
+  left: 6rem;
+  font-size: 5rem;
+  color: whitesmoke;
+  text-align: center;
+  opacity: 1;
+}
+
+img {
+  height: 80px;
+  width: auto;
+  top: 0.5rem;
+  left: 5rem;
+  position: inherit;
 }
