@@ -36,11 +36,12 @@ label {
 }
 
 div.background-image {
-  flex: 1 1 70%;
+  flex: 1 1 65%;
   min-height: 100vh;
   background-image: url(static/background-img.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: auto;
+  background-position: bottom;
   display: flex;
 }
 
@@ -108,7 +109,7 @@ div.caption {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-height: calc(100px - 1vh);
+  height: calc(100px - 1vh);
   background-color: rgba(0, 0, 0, 0.5);
 }
 
