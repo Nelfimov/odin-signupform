@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Norse Bold';
+  font-family: NorseBold;
   src: url(https://cdn.statically.io/gh/TheOdinProject/theodinproject/efdc2888072f409e687d31dc580595dbe4fe0ff4/app/assets/fonts/Norse-Bold.otf);
 }
 
@@ -7,7 +7,7 @@ html,
 body {
   height: 100%;
   margin: 0;
-  font-family: 'Norse-Bold', sans-serif;
+  font-family: sans-serif;
   background-color: #fcfcf2;
 }
 
@@ -36,12 +36,12 @@ label {
 }
 
 div.background-image {
-  flex: 0 0 100%;
-  width: 500px;
-  max-width: 500px;
+  flex: 1 1 70%;
+  min-height: 100vh;
   background-image: url(static/background-img.jpg);
   background-repeat: no-repeat;
-  background-size: 500px 100%;
+  background-size: 100%;
+  display: flex;
 }
 
 div.content {
@@ -83,32 +83,51 @@ input {
 }
 
 input:focus {
-  box-shadow: 1 1;
-  border-color: blue;
+  outline: none;
+  box-shadow: 1px 1px 1px grey;
+  border: 2px solid blue;
 }
 
+input.error {
+  border-color: red;
+}
+
+div.input span {
+  font-size: 0px;
+}
+
+div.input span.error {
+  color: red;
+  font-size: 12px;
+}
 
 div.caption {
   position: relative;
   top: calc(50px + 30vh);
-  width: 500px;
-  height: 100px;
+  flex: 1 1 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: calc(100px - 1vh);
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-span {
+.caption span {
   position: inherit;
-  left: 6rem;
-  font-size: 5rem;
+  font-size: calc(40px + 5vh);
   color: whitesmoke;
-  text-align: center;
   opacity: 1;
+  flex: 0;
+  font-family: NorseBold;
 }
 
 img {
   height: 80px;
   width: auto;
-  top: 0.5rem;
-  left: 5rem;
-  position: inherit;
+  flex: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #596D48;
 }
