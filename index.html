@@ -1,65 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Odin Sign In page</title>
-    <script src="scripts.js" defer></script>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Odin Sign In page</title>
+  <script src="scripts.js" defer></script>
+</head>
 
-  <body>
-    <div class="background-image">
-      <div class="caption">
-        <img src="static/odin-logo.png" alt="logo">
-        <span>ODIN</span>
-      </div>
+<body>
+  <div class="background-image">
+    <div class="caption">
+      <img src="static/odin-logo.png" alt="logo">
+      <span>ODIN</span>
     </div>
-    <div class="content">
-      <h2>
-        This is not a real online service! You know you need something like this in your life to help you realize your
-        deepest dreams. Sign up <em>now</em> to get started.
-      </h2>
-      <h2>
-        You <em>know</em> you want to.
-      </h2>
-      <form action="" method="get">
-        <div class="control">
-          <h2>Let's do this!</h2>
-          <div class="form-control">
-            <div class="input">
-              <label for="firstName">FIRST NAME</label>
-              <input type="text" name="firstName" id="firstName" minlength="3">
-            </div>
-            <div class="input">
-              <label for="lastName">LAST NAME</label>
-              <input type="text" name="lastName" id="lastName" minlength="3">
-            </div>
-            <div class="input">
-              <label for="email">EMAIL</label>
-              <input type="email" name="email" id="email" minlength="3" required>
-            </div>
-            <div class="input">
-              <label for="phone">PHONE NUMBER</label>
-              <input type="tel" name="phone" id="phone" minlength="3">
-            </div>
-            <div class="input">
-              <label for="password">PASSWORD</label>
-              <input class="error" type="password" name="password" id="password" pattern="\w{6}" required>
-              <span class="error">* Passwords do not match</span>
-            </div>
-            <div class="input">
-              <label for="passwordConfirm">CONFIRM PASSWORD</label>
-              <input class="error" type="password" name="passwordConfirm" id="passwordConfirm" pattern="\w{6}" required>
-            </div>
+  </div>
+  <div class="content">
+    <h2>
+      This is not a real online service! You know you need something like this in your life to help you realize your
+      deepest dreams. Sign up <em>now</em> to get started.
+    </h2>
+    <h2>
+      You <em>know</em> you want to.
+    </h2>
+    <form action="">
+      <div class="control">
+        <h2>Let's do this!</h2>
+        <div class="form-control">
+          <div class="input">
+            <label for="firstName">FIRST NAME<span>*</span></label>
+            <input type="text" name="firstName" id="firstName">
+          </div>
+          <div class="input">
+            <label for="lastName">LAST NAME<span>*</span></label>
+            <input type="text" name="lastName" id="lastName">
+          </div>
+          <div class="input">
+            <label for="email">EMAIL<span>*</span></label>
+            <input type="email" name="email" id="email">
+          </div>
+          <div class="input">
+            <label for="phone">PHONE NUMBER<span>*</span></label>
+            <input type="tel" name="phone" id="phone">
+          </div>
+          <div class="input">
+            <label for="password">PASSWORD<span>*</span></label>
+            <input type="password" name="password" id="password">
+          </div>
+          <div class="input">
+            <label for="passwordConfirm">CONFIRM PASSWORD<span>*</span></label>
+            <input type="password" name="passwordConfirm" id="passwordConfirm">
           </div>
         </div>
-        <button type="submit">Create Account</button>
-      </form>
-      <p>Already have an account? <a href="login.html">Log In</a></p>
-    </div>
-  </body>
+      </div>
+      <button type="submit">Create Account</button>
+    </form>
+    <p>Already have an account? <a href="login.html">Log In</a></p>
+  </div>
+</body>
 
 </html>

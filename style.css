@@ -73,6 +73,10 @@ button {
 
 }
 
+button:disabled {
+  background-color: grey;
+}
+
 input {
   font-family: inherit;
   font-size: 100%;
@@ -89,17 +93,12 @@ input:focus {
   border: 2px solid blue;
 }
 
-input.error {
+input:invalid {
   border-color: red;
 }
 
-div.input span {
-  font-size: 0px;
-}
-
-div.input span.error {
+label span {
   color: red;
-  font-size: 12px;
 }
 
 div.caption {
